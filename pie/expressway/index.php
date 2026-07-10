@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style/mystyle.css">
     <title>Expressway</title>
 </head>
 
@@ -17,7 +17,7 @@
             south. The PIE will be a part of the Pulau Tiong Ring Road (PTRR) and provides
             connectivity to Myna Town and suburbs along the eastern coast.  
         </p>
-        <table>
+        <table >
             <caption class="table-caption">List of interchange of PIE</caption>
             <tr>
                 <th>Kilometre</th>

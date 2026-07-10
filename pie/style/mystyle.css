@@ -2,6 +2,7 @@
 . for class, # for id, if nothing we use the original html tag
 
 1. PADDING 
+- padding: all-direction;
 - padding: top right bottom left; (clockwise)
 - padding: top-bottm left-right;
 - padding: top left-right bottom;
@@ -10,8 +11,20 @@ no comma in between
 2. BORDER
 border: border-width border-style border-color;
 
-3.
+3. FONT
+- font-family: Defines the typeface and fallback choices. Always end your fallback system with a generic category like sans-serif or serif.
+- font-size: Sets the character height using fixed units (px), relative units (rem, em), or percentage scales.
+- font-weight: Adjusts stroke thickness via keywords like normal or bold, or specific numeric values from 100 to 900.
+- font-style: Slants your text using normal, italic, or customized oblique angles.
+- line-height: Controls leading space between text lines to improve overall readability.
+- font-variant: Activates special typography styles like small-caps or custom alternative glyphs.
+font: font-style font-variant font-weight font-size/line-height font-family;
 
+p {
+  font: italic small-caps bold 16px/1.5 "Roboto", Arial, sans-serif;
+}
+
+4. 
 */
 
 
@@ -123,12 +136,49 @@ nav a:hover{
     padding: 18px;
 }
 
-table, td, th{
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 0px 15px 0px 2px;
+table{
+    border: 5px solid rgb(0, 153, 0);
+    border-spacing: 4px;
+    margin: 0px;
+    padding: 2px;
+
+    /*task 4*/
+    width: 640px;
 }
 
-.table-caption{
-    text-align: center;
+caption{
+    margin: 0px;
+    padding: 10px;
+    font-style: italic;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(217, 217, 217);
+}
+
+tr:nth-child(even){
+    background-color: rgb(191, 191, 191);
+}
+
+th{
+    margin: 0px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 153);
+}
+
+/*1st two column*/
+th:nth-child(1), td:nth-child(1),
+th:nth-child(2), td:nth-child(2){
+    width: 90px;
+}
+
+/*3rd column*/
+th:nth-child(3), td:nth-child(3){
+    width: 240px;
+}
+
+td{
+    margin: 0px;
+    padding: 10px;
 }

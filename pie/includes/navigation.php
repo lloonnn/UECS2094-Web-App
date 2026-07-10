@@ -1,19 +1,19 @@
 <nav id="topNavigation">
     <ul>
         <li>
-            <a href="/vscfile/UECS2094/pie/index.php" target="_blank">Home</a>
+            <a href="/vscfile/UECS2094/pie/index.php">Home</a>
         </li>
         <li>
-            <a href="/vscfile/UECS2094/pie/about/" target="_blank">About PIEB</a>
+            <a href="/vscfile/UECS2094/pie/about/">About PIEB</a>
         </li>
         <li>
-            <a href="/vscfile/UECS2094/pie/expressway/" target="_blank">Pan Island Expressway</a>
+            <a href="/vscfile/UECS2094/pie/expressway/">Pan Island Expressway</a>
         </li>
         <li>
-            <a href="/vscfile/UECS/2094/pie/project/" target="_blank">Project Updates</a>
+            <a href="/vscfile/UECS/2094/pie/project/">Project Updates</a>
         </li>
         <li>
-            <a href="/vscfile/UECS2094/pie/traffic/" target="_blank">Traffic Anouncement</a>
+            <a href="/vscfile/UECS2094/pie/traffic/">Traffic Anouncement</a>
         </li>
     </ul>
 </nav>
