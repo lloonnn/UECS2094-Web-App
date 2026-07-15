@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 4</title>
+        <style>
+            #box{
+                border: 3px solid black;
+                box-sizing: border-box;
+                padding: 6px 5px;
+                width: 700px;
+                margin: 10px auto;
+            }
+
+            h1{
+                margin-top: 1px;
+            }
+
+            button{
+                padding: 8px;
+                margin: 3px;
+            }
+
+            .highlight{
+                color: blue;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <h1 id="header">Welcome to the Interactive Web Page</h1>
+            <p>Click the buttons below to change the content, style, and add/remove elements.</p>
+            <button>Change Content</button>
+            <button>Change Style</button>
+            <button>Add New Element</button>
+            <button>Remove Last Element</button>
+            <button>Toggle Class on Heading</button>
+        </div>
+
+        <script>
+            const buttons = document.querySelectorAll("button");
+            const header = document.getElementById("header");
+            const parent = document.getElementById("box");
+            
+            buttons[0].addEventListener("click", ()=>{
+                if(header.innerHTML === "Content Changed"){
+                    header.innerHTML = "Welcome to the Interactive Web Page";
+                    return;
+                }
+                header.innerHTML = "Content Changed";
+            });
+
+            buttons[1].addEventListener("click", () =>{
+                header.style.backgroundColor = "grey"
+            });
+
+            buttons[2].addEventListener("click", () =>{
+                let element = document.createElement("p");
+                element.innerHTML = "This is a new element added to the page!";      
+                element.className = "newElement";
+                element.style.backgroundColor = "lightblue";
+                element.style.padding = "10px";
+                element.style.margin = "6px 1px";
+                parent.appendChild(element); 
+            });
+
+            buttons[3].addEventListener("click", () => {
+                const elementList = document.querySelectorAll(".newElement");
+                const elementLength = elementList.length;
+                if( elementLength > 0){
+                    elementList[elementLength - 1].remove();
+                    console.log("element has been removed");
+                }
+            });
+
+            buttons[4].addEventListener("click", ()=>{
+                header.classList.toggle("highlight");
+            })
+
+        </script>
+    </body>
+</html>
