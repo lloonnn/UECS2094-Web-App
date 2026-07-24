@@ -10,7 +10,7 @@
         <?php include('includes/navigation.php'); ?>
 
         <div id="contentWrapper" class="content">
-            <img src="img/Capture.JPG" width="960" height="300"> 
+            <img src="./img/Capture.JPG" width="960" height="300"> 
             <h1>Pan Island Expressway Berhad (PIEB)</h1>
             <article>
                 <p>
@@ -20,7 +20,7 @@
                     and forms part of the Pulau Tiong Ring Road (PTRR). The expressway will also feature a 5km 
                     tunnel that will run underneath the central business district of Myna Town.<br>
                 </p>
-                <a href="/vscfile/UECS2094/pie/contact/" target="_blank">Contact Us</a>
+                <a href="/vscfile/UECS2094/pie/contact/">Contact Us</a>
             </article>        
         </div>
 
