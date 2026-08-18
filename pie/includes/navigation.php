@@ -10,10 +10,12 @@
             <a href="/vscfile/UECS2094/pie/expressway/">Pan Island Expressway</a>
         </li>
         <li>
-            <a href="/vscfile/UECS/2094/pie/project/">Project Updates</a>
+            <a href="/vscfile/UECS2094/pie/project/">Project Updates</a>
         </li>
         <li>
             <a href="/vscfile/UECS2094/pie/traffic/">Traffic Anouncement</a>
         </li>
+
+        <li><a href="/vscfile/UECS2094/pie/contact/">Contact Us</a></li>
     </ul>
 </nav>

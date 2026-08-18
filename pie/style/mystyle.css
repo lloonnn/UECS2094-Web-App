@@ -130,12 +130,6 @@ nav a:hover{
     text-decoration: none;
 }
 
-.contentWrapper{
-    /*task 3*/
-    margin: 0px;
-    padding: 18px;
-}
-
 table{
     border: 5px solid rgb(0, 153, 0);
     border-spacing: 4px;
@@ -182,3 +176,58 @@ td{
     margin: 0px;
     padding: 10px;
 }
+
+#contentWrapper{
+    /*task 3*/
+    background-color: #ffffff;
+    max-width: 480px;
+    margin: 40px auto 40px auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content input[type="text"],
+.content input[type="email"],
+.content input[type="tel"],
+.content select,  
+.content textarea{
+    width: 100%;
+    padding: 9px 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+/* space between one field and the next one */
+.field {
+    margin-bottom: 14px;
+}
+
+.content input[type="button"] {
+    width: 20%;
+    padding: 11px;
+    margin-top: 10px;
+    background-color: lightgreen;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.error{
+    color:red;
+    font-size: 14px;
+}
+

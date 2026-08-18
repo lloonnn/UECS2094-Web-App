@@ -9,7 +9,7 @@
     <?php include("../includes/navigation.php")?>
 
     <div id="contentWrapper" class="content">
-        <h1>About PIEB</h1>
+        <h2>About PIEB</h2>
         <article>
             Pan Island Expressway Berhad (PIEB) was established on March 13, 2013 to construct
             and operate the Pan Island Expressway (PIE) on Pulau Tiong. The company has its headquarters 

@@ -1,7 +1,9 @@
+<!--C:/wamp64/www/pie/i -->
+
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./style/mystyle.css">
+        <link rel="stylesheet" href="/vscfile/UECS2094/pie/style/mystyle.css">
         <title>Pan Island Expressway Berhad</title>
     </head>
 
@@ -20,7 +22,6 @@
                     and forms part of the Pulau Tiong Ring Road (PTRR). The expressway will also feature a 5km 
                     tunnel that will run underneath the central business district of Myna Town.<br>
                 </p>
-                <a href="/vscfile/UECS2094/pie/contact/">Contact Us</a>
             </article>        
         </div>
 
