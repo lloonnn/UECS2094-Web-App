@@ -23,10 +23,12 @@
         <input type="tel" id="phone" name="phone" value="<?= htmlspecialchars($phone); ?>">
         <div id="phoneError" class="error"><?= $errors['phone'] ?? ''; ?></div>
 
-        Type of Enquiry:<br>
-        <input type="checkbox" name="enquiry[]" value="General Enquiry" <?= in_array('General Enquiry', $enquiry) ? 'checked' : ''; ?>> General Enquiry
-        <input type="checkbox" name="enquiry[]" value="Complaints"      <?= in_array('Complaints', $enquiry)      ? 'checked' : ''; ?>> Complaints
-        <input type="checkbox" name="enquiry[]" value="Suggestions"     <?= in_array('Suggestions', $enquiry)     ? 'checked' : ''; ?>> Suggestions
+        <label for="phone">Type of Enquiry: </label>
+        <div id="content-checkbox">
+            <input type="checkbox" name="enquiry[]" value="General Enquiry" <?= in_array('General Enquiry', $enquiry) ? 'checked' : ''; ?>> General Enquiry
+            <input type="checkbox" name="enquiry[]" value="Complaints"      <?= in_array('Complaints', $enquiry)      ? 'checked' : ''; ?>> Complaints
+            <input type="checkbox" name="enquiry[]" value="Suggestions"     <?= in_array('Suggestions', $enquiry)     ? 'checked' : ''; ?>> Suggestions
+        </div>
         <div id="enquiryError" class="error"><?= $errors['enquiry'] ?? ''; ?></div>
 
         <label for="message">Subject:</label><br>

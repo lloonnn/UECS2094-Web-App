@@ -2,14 +2,12 @@
 <html>
     <head>
         <title>Contact Us</title>
-        <style>
-            .error {
-                color: red;
-            }
-        </style>
+        <link rel="stylesheet" href="mystyle.css">
     </head>
     <body>
         <?php
+        include "includes/header.php";
+        include "includes/navigation.php";
         // contact/index.php
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -87,6 +85,8 @@
             $errors  = [];
             include('_form.php');
         }
+
+        include "includes/footer.php";
     ?>
 </body>
 </html>

@@ -1,55 +1,27 @@
-/*
-. for class, # for id, if nothing we use the original html tag
-
-1. PADDING 
-- padding: all-direction;
-- padding: top right bottom left; (clockwise)
-- padding: top-bottm left-right;
-- padding: top left-right bottom;
-no comma in between
-
-2. BORDER
-border: border-width border-style border-color;
-
-3. FONT
-- font-family: Defines the typeface and fallback choices. Always end your fallback system with a generic category like sans-serif or serif.
-- font-size: Sets the character height using fixed units (px), relative units (rem, em), or percentage scales.
-- font-weight: Adjusts stroke thickness via keywords like normal or bold, or specific numeric values from 100 to 900.
-- font-style: Slants your text using normal, italic, or customized oblique angles.
-- line-height: Controls leading space between text lines to improve overall readability.
-- font-variant: Activates special typography styles like small-caps or custom alternative glyphs.
-font: font-style font-variant font-weight font-size/line-height font-family;
-
-p {
-  font: italic small-caps bold 16px/1.5 "Roboto", Arial, sans-serif;
-}
-
-4. 
-*/
-
-
 body{
     color: rgb(13, 13, 13);
     background-color: rgb(242, 242, 242);
 
-    /*task 2*/
     font-family: Helvetica, Arial, Sans-serif;
     font-size: 14px;
     line-height: 1.5em;
 
-    /*task 3*/
     margin: 0px;
     padding: 0px;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 #topNavigation{
     color: rgb(255, 255, 255);
     background-color: rgb(148, 0, 0);
 
-    /*task 2*/
     font-weight: bold;
 
-    /*task 3*/
     margin: 0px;
     padding: 10px 18px;
 }
@@ -58,23 +30,19 @@ body{
     color: rgb(255, 255, 255);
     background-color: rgb(148, 0, 0);
 
-    /*task 2*/
     font-size: 0.9em;
 
-    /*task 3*/
     margin: 0px;
     padding: 18px;
     border: 5px dotted black;
 }
 
 h1, h2, h3, h4, h4, h5, h6{
-    color: rgb(0, 0, 0); /*(0, 0, 0) for all black*/
+    color: rgb(0, 0, 0);
 
-    /*task 2*/
     font-weight: bold;
     line-height: 1.25em;
 
-    /*task 3*/
     padding: 0px;
 }
 
@@ -114,11 +82,9 @@ a, a:link, a:visited, a:hover{
 }
 
 a:hover{
-    /*task 2*/
     text-decoration: underline;
 }
 
-/*link inside nav tag will be white color*/
 nav a, nav a:link, nav a:visited{
     color: rgb(255, 255, 255);
 }
@@ -126,22 +92,15 @@ nav a, nav a:link, nav a:visited{
 nav a:hover{
     color: rgb(255, 255, 26);
 
-    /*task 2*/
     text-decoration: none;
-}
-
-div#contentWrapper {
-  margin: 0;
-  padding: 18px;
 }
 
 table{
     border: 5px solid rgb(0, 153, 0);
     border-spacing: 4px;
-    margin: 0px;
+    margin: 10px auto 30px;
     padding: 2px;
 
-    /*task 4*/
     width: 640px;
 }
 
@@ -166,13 +125,11 @@ th{
     background-color: rgb(51, 51, 153);
 }
 
-/*1st two column*/
 th:nth-child(1), td:nth-child(1),
 th:nth-child(2), td:nth-child(2){
     width: 90px;
 }
 
-/*3rd column*/
 th:nth-child(3), td:nth-child(3){
     width: 240px;
 }
@@ -180,5 +137,71 @@ th:nth-child(3), td:nth-child(3){
 td{
     margin: 0px;
     padding: 10px;
+}
+
+.content{
+  display: flex;
+  justify-content: center; 
+  align-items: center;         
+  max-width: 60rem;    
+  margin: 20px auto;
+  min-height: 60vh;
+}
+
+.content p{
+    text-align: center;
+}
+
+#contact-form-wrapper{
+    background-color: #ffffff;
+    max-width: 480px;
+    margin: 40px auto 40px auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select,  
+.contact-form textarea{
+    width: 100%;
+    padding: 9px 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+.field {
+    margin-bottom: 14px;
+}
+
+.contact-form input[type="button"],
+.contact-form button {
+    min-width: 20%;
+    padding: 11px;
+    margin-top: 10px;
+    background-color: lightgreen;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.error{
+    color:red;
+    font-size: 14px;
 }
 

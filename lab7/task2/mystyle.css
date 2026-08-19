@@ -1,0 +1,223 @@
+/* Set the default text color and background color for the body */
+body {
+  color: rgb(13, 13, 13);
+  background-color: rgb(242, 242, 242);
+  font-family: helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation with id topNavigation */
+nav#topNavigation {
+  color: rgb(255, 255, 255);
+  background-color: rgb(128, 0, 0);
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 18px;
+}
+
+/* Style the footer with id pageFooter */
+#pageFooter {
+  font-size: 0.9em;
+  margin: 0;
+  padding: 18px;
+  border-top: 1px dotted black;
+}
+
+/* Set the text color for headings h1 - h6 */
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(0, 0, 0);
+}
+
+/* heading styles */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.25em;
+  margin: 12px 0 8px 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.25em;
+  margin: 10px 0 6px 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 1.25em;
+  margin: 8px 0 5px 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.25em;
+  margin: 6px 0 4px 0;
+  padding: 0;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.25em;
+  margin: 6px 0 4px 0;
+  padding: 0;
+}
+
+h6 {
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.25em;
+  margin: 6px 0 4px 0;
+  padding: 0;
+}
+
+/* Set the text color for links and their various states */
+a, a:link, a:visited {
+  color: rgb(128, 0, 0);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Set the text color for links in the navigation */
+nav a, nav a:link, nav a:visited {
+  color: rgb(255, 255, 255);
+  
+}
+
+/* Set the text color for links in the navigation when being hovered over */
+nav a:hover {
+  color: rgb(255, 255, 0);
+  text-decoration: none;
+}
+
+/* page layout styles */
+header {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for table */
+table {
+  border: 5px solid rgb(0, 153, 0);
+  border-spacing: 4px;
+  margin: 0;
+  padding: 2px;
+}
+
+caption {
+  font-style: italic;
+  margin: 0;
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(217, 217, 217);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(191, 191, 191);
+}
+
+th {
+  background-color: rgb(51, 51, 153);
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  margin: 0;
+}
+
+/*style for table id PIETable*/
+#PIETable {
+  width: 640px;
+}
+
+#PIETable th:nth-child(1),
+#PIETable th:nth-child(2),
+#PIETable td:nth-child(1),
+#PIETable td:nth-child(2) {
+  width: 90px;
+}
+
+#PIETable th:nth-child(3),
+#PIETable td:nth-child(3) {
+  width: 240px;
+}
+
+#contentWrapper{
+    background-color: #ffffff;
+    max-width: 480px;
+    margin: 40px auto 40px auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content input[type="text"],
+.content input[type="email"],
+.content input[type="tel"],
+.content select,  
+.content textarea{
+    width: 100%;
+    padding: 9px 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+#content-checkbox{
+    width: 100%;
+    padding: 9px 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px none #cccccc;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+/* space between one field and the next one */
+.field {
+    margin-bottom: 14px;
+}
+
+.content input[type="submit"] {
+    width: 20%;
+    padding: 11px;
+    margin-top: 10px;
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.error{
+    color:red;
+    font-size: 14px;
+}
