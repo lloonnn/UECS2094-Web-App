@@ -1,0 +1,217 @@
+/* ============================================================
+   Task 6 : Stylesheet for the Study Plan Management System
+   ============================================================ */
+
+/* ---------- General page settings ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+/* ---------- Header (welcome message + navigation) ---------- */
+.header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+.nav {
+    margin-top: 20px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 12px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Main area of every page ---------- */
+.content {
+    padding: 20px 35px 40px 35px;
+}
+
+.content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+/* ---------- Homepage ---------- */
+.intro {
+    max-width: 750px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.promo-image {
+    display: block;
+    max-width: 630px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- White box used by the forms ---------- */
+.card {
+    background-color: #ffffff;
+    max-width: 620px;
+    margin: 20px auto;
+    padding: 20px 25px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Forms ---------- */
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 9px;
+    font-size: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #449d48;
+}
+
+/* ---------- Error messages ---------- */
+
+/* small red message under an input field (validation.js) */
+.error {
+    display: block;
+    color: red;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* red message shown by PHP under the page title */
+.error-message {
+    color: red;
+    font-size: 15px;
+    margin: 0 0 15px 0;
+}
+
+.error-message a {
+    color: #4CAF50;
+}
+
+/* red message shown in the middle of the profile page */
+.center-message {
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0 25px 0;
+}
+
+.center-message a {
+    color: #4CAF50;
+}
+
+/* ---------- List of courses ---------- */
+.course {
+    margin-bottom: 22px;
+}
+
+.course-title {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.course-desc {
+    margin: 5px 0 0 25px;
+    font-size: 14px;
+    font-style: italic;
+    color: #666666;
+    line-height: 1.5;
+}
+
+/* ---------- Profile page table ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #4a483d;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* the header is row 1, so the first data row is an "even" row */
+table tr:nth-child(even) {
+    background-color: #e3dac1;
+}
+
+table tr:nth-child(odd) {
+    background-color: #a69f8d;
+}
+
+th:nth-child(1) {
+    width: 12%;
+}
+
+th:nth-child(2) {
+    width: 20%;
+}
